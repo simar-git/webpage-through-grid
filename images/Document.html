@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- saved from url=(0078)http://127.0.0.1:5500/CSS%20Grids%20and%20more/task%20after%20class/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+    </style>
+    <title>Document</title>
+  <link href="./Document_files/remixicon.css" rel="stylesheet"><link rel="stylesheet" href="./Document_files/style.css"></head>
+  <body>
+    <div id="container">
+      <nav>
+        <div class="logo">
+          <img src="./Document_files/logo.webp">
+        </div>
+
+        <div class="navLinks">
+          <ul>
+            <li><a herf="#">Home V.1</a></li>
+            <li><a class="about-btn" herf="#">About V.1</a></li>
+            <li><a herf="#">Contact V.1</a></li>
+            <li>
+              <a herf="#">Pages<i class="ri-arrow-drop-down-line"></i></a>
+            </li>
+            <li><a herf="#">Cart (0)</a></li>
+          </ul>
+        </div>
+
+        <button class="contact-btn">Contact</button>
+      </nav>
+
+      <section class="hero">
+        <div class="about-prt"><p>About our firm</p></div>
+        <div class="detail-prt">
+          <p>
+            At our firm, we pride ourselves on delivering tailored solutions
+            that empower businesses to thrive. With years of experience across
+            various industries, our dedicated team is committed to driving
+            growth and operational excellence.
+          </p>
+          <div class="about-button-prt">
+            <button class="about-contact">contact</button>
+          </div>
+        </div>
+
+        <div class="about-img">
+          <img src="./Document_files/here_image.webp" alt="here_image">
+        </div>
+      </section>
+    </div>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>

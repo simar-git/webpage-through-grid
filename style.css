@@ -1,0 +1,364 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#container {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  padding: 0% 1.2%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3.5rem;
+}
+
+.logo > img {
+  height: 2rem;
+}
+
+.navLinks > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  gap: 2.5rem;
+}
+
+.navLinks > ul > li > a {
+  font-weight: 300;
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+.navLinks > ul > li > .about-btn {
+  color: #1a43ef;
+}
+
+.contact-btn {
+  padding: 1rem 1.5rem;
+  background-color: #1a43ef;
+  border-radius: 2rem;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.5s ease-in-out;
+}
+
+.contact-btn:hover {
+  transform: scale(0.95);
+}
+
+.hero {
+  border-radius: 3rem;
+  border: none;
+  background-color: #f4f7ff;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 30% 70%;
+  place-items: start;
+  grid-template-areas:
+    "about detail"
+    "aboutImg aboutImg";
+  row-gap: 3rem;
+  padding: 3.5rem 3rem;
+  overflow: hidden;
+}
+
+.about-prt {
+  width: 100%;
+  height: 100%;
+  grid-area: about;
+}
+
+.about-prt > p {
+  font-size: 3rem;
+  font-weight: 350;
+}
+
+.detail-prt {
+  width: 100%;
+  height: 100%;
+  grid-area: detail;
+  padding: 0rem 2.5rem;
+}
+
+.detail-prt > p {
+  font-size: 1.12rem;
+  font-weight: 200;
+}
+
+.about-button-prt {
+  display: grid;
+  padding: 2rem 0rem;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2rem;
+}
+
+.about-button-prt > button {
+  padding: 1.5rem 3rem;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.about-contact-btn {
+  background-color: #1a43ef;
+  color: white;
+}
+
+.about-button-prt > .free-contact-btn {
+  background-color: white;
+  color: #1a43ef;
+  border: 1px solid #1a43ef;
+}
+
+.about-img {
+  height: 5rem;
+  width: 5rem;
+  height: 100%;
+  width: 100%;
+  grid-area: aboutImg;
+  /* place-items: center; */
+}
+
+.about-img > img {
+  height: auto;
+  max-width: 100%;
+  border-radius: 3rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.satistics {
+  height: auto;
+  width: 100%;
+  background-color: white;
+  padding: 2.3rem 3rem;
+  margin: 1rem 0rem;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 8rem;
+}
+
+.stat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.stat > h3 {
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+.stat > p {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+  color: lightslategray;
+}
+
+.about-us {
+  height: auto;
+  width: 100%;
+  border-radius: 3rem;
+  border: none;
+  background-color: #f4f7ff;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 4rem;
+  padding: 3.5rem 3rem;
+}
+
+.main-about-us {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.heading-about-us > button {
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  background-color: #f4f7ff;
+  border: 1px solid black;
+  border-radius: 1.5rem;
+}
+
+.info-about-us {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.info-about-us > h3 {
+  font-weight: 300;
+  font-size: 2.25rem;
+}
+
+.info-about-us > p {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.img-about-us {
+  border: none;
+  height: 100%;
+  width: 100%;
+}
+
+.img-about-us > img {
+  height: 100%;
+  width: 100%;
+  border-radius: 3rem;
+}
+
+.footer-dark {
+  background-color: #1e1e1e; /* Match the dark theme in the image */
+  color: #ffffff;
+  padding: 5rem 4rem 2rem 4rem;
+  border-radius: 2rem;
+  margin: 1rem;
+}
+
+.footer-top {
+  display: grid;
+  /* First column is 40% width, next three are equal parts */
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 2rem;
+  padding-bottom: 6rem;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 2.5rem;
+}
+
+.footer-logo span {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.footer-brand-section h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+/* Subscription Row */
+.subscribe-form {
+  display: flex;
+  gap: 1rem;
+}
+
+.subscribe-form input {
+  background-color: #333333;
+  border: none;
+  border-radius: 3rem;
+  padding: 1.2rem 2rem;
+  color: white;
+  width: 300px;
+  font-size: 1rem;
+}
+
+.sub-btn {
+  background-color: #2e62f6; /* Navis Blue */
+  color: white;
+  border: none;
+  border-radius: 3rem;
+  padding: 1.2rem 2.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.sub-btn:hover {
+  opacity: 0.9;
+}
+
+/* Nav Links Styling */
+.footer-nav-col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem; /* Large vertical gap from image */
+}
+
+.footer-nav-col ul li a {
+  color: #a1a1a6;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.footer-nav-col ul li a:hover,
+.active-link {
+  color: #ffffff !important;
+  font-weight: 500;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding-top: 2rem;
+  border-top: 1px solid #333;
+}
+
+.footer-legal a {
+  color: #a1a1a6;
+  text-decoration: none;
+}
+
+.footer-copyright {
+  text-align: center;
+  color: #a1a1a6;
+}
+
+.footer-social {
+  text-align: right;
+}
+
+.footer-social a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  background-color: #333;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
